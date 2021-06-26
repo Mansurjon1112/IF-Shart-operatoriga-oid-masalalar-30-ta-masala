@@ -10,8 +10,8 @@ Created on Sat Jun 26 11:58:06 2021
 a=int(input('birinchi son: '))
 b=int(input('ikkinchi son: '))
 if a>b:
-    print('kichigi',b)
+    print('2-son kichik')
 elif a<b:
-    print('kichigi',a)
+    print('1-son kichik')
 else:
     print('Ular teng')
