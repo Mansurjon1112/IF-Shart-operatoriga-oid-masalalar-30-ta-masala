@@ -1,0 +1,202 @@
+#if masalalari
+#1
+a=int(input('Son kiriting: '))
+if a>0:
+    a+=1
+    print(a)
+else:
+    print(a)
+    
+#2
+a=int(input('Son kiriting: '))
+if a>0:
+    a+=1
+else:
+    a-=2
+print(a)    
+
+#3 
+a=int(input('Son kiriting: '))
+if a>0:
+    a+=1
+elif a<0:
+    a-=2
+else: #a==0 
+    a=10   
+print(a)    
+
+#4
+a=int(input('a='))
+b=int(input('b='))
+c=int(input('c='))
+sanoq=0
+if a>0:
+    sanoq+=1
+if b>0:
+    sanoq+=1
+if c>0:
+    sanoq+=1    
+print(sanoq)
+
+#5
+a=int(input('a='))
+b=int(input('b='))
+c=int(input('c='))
+musbat = 0 
+manfiy = 0
+if a>0:
+    musbat+=1
+elif a<0:
+    manfiy+=1
+    
+if b>0:
+    musbat+=1
+elif b<0:
+    manfiy+=1
+    
+if c>0:
+    musbat+=1
+elif c<0:
+    manfiy+=1
+print("Kiritilgan sonlarning {} tasi musbat, {} tasi manfiy".format(musbat,manfiy))
+
+#6
+a=int(input('a='))
+b=int(input('b='))
+if a>b:
+    print(a)
+elif a<b:
+    print(b)
+else:
+    print('Ular teng')
+    
+#7 
+a=int(input('a='))
+b=int(input('b='))
+if a>b:
+    print('2-si')
+elif a<b:
+    print('1-si')
+else:
+    print('Ular teng')
+
+#8 
+a=int(input('a='))
+b=int(input('b='))
+if a>b:
+    print(a,b)
+elif a<b:
+    print(b,a)
+else:
+    print('Ular teng')    
+
+#9    
+a=float(input('a='))
+b=float(input('b='))
+if a>b:
+    a,b=b,a   
+elif a==b:
+    print('Ular teng')  
+
+print("a={}, b={}".format(a,b))
+#print("a=",a,"b=",b)
+
+
+    
+#10
+a=int(input('a='))
+b=int(input('b='))
+if a!=b:
+    a=b=a+b
+else:
+    a=b=0
+print("a=",a,"b=",b)    
+
+#11
+a=int(input('a='))
+b=int(input('b='))
+if a!=b:
+    if a>b:
+        b=a
+    else:
+        a=b        
+else:
+    a=b=0
+print("a=",a,"b=",b) 
+
+#12
+a=int(input('a='))
+b=int(input('b='))
+c=int(input('c='))
+
+print(min(a,b,c))
+#print(sum(a,b,c)) Yig'indisini hisoblash
+#print(max(a,b,c)) Eng kattasini aniqlash
+
+#2-usul 
+if (a>b>c) or (b>a>c) :
+    print(c)
+elif (b>c>a) or (c>b>a):
+    print(a)
+else:
+    print(b)    
+
+#3-usul
+
+if a>b:
+    m=b
+else:
+    m=a
+if m>c:
+    m=c
+print(m)    
+
+#13
+a=int(input('a='))
+b=int(input('b='))
+c=int(input('c='))
+if (a>b>c) or (c>b>a) :
+    print(b)
+elif (b>c>a) or (a>c>b):
+    print(c)
+else:
+    print(a)    
+#2-usul
+if a>b:
+    m=b
+else:
+    m=a
+if m<c:
+    m=c
+print(m)     
+'''
+#14
+a=int(input('a='))
+b=int(input('b='))
+c=int(input('c='))
+print(min(a,b,c), max(a,b,c))
+#1-usul
+if a>b:
+    kichik=b
+    katta=a
+else:
+    kichik=a
+    katta=b
+if kichik>c:
+    kichik=c
+if katta<c:
+    katta=c
+print(kichik,katta)  
+#2-usul 
+if a>b>c:
+    print(a,c)
+elif (b>c>a):
+    print(b,a)
+elif a>c>b:
+    print(a,b)
+elif b>a>c:
+    print(b,c)    
+elif c>a>b:
+    print(c,b)
+else:
+    print(c,a)  
